@@ -14,13 +14,13 @@ description: "Lab practices and data science best practices"
 # Welcome to the WHO Lab!
 
 ## About the lab
-Welcome to the lab of Dr. Xindi (Cindy) Hu, Assistant Professor in Epidemiology & Population Health at Stanford University. Our mission is to XXX. Our focus is on XXX. We use a variety of XXX methods in pursuit of our mission. To learn more about the lab, visit [xindicindyhu.org](https://xindicindyhu.org/).
+Welcome to the lab of Dr. Xindi (Cindy) Hu, Assistant Professor in Environmental and Occupational Health at the George Washington University Milken Institute School of Public Health. Our mission is to study how clean drinking water and other environmental factors impact population health and health disparities. We conduct rigorous and policy-relevant research to generate evidence at a large scale, leveraging transdisciplinary approaches spanning exposure science, geospatial data science, and health informatics. To learn more about the lab, visit [xindicindyhu.org](https://xindicindyhu.org/).
 
 ## About this lab manual
 This lab manual covers our communication strategy, code of conduct, and best practices for reproducibility of computational workflows. It is a living document that is updated regularly. 
 
 This manual was created with input from a large number of team members and with inspiration from [other scientists' lab manuals](https://jadebc.github.io/lab-manual/). 
-Contributors include Xindi (Cindy) Hu, Jahred Liddie.
+Contributors thus far include Xindi (Cindy) Hu and Jahred Liddie.
 
 Feel free to draw from this manual (and please cite it if you do!).  
 <br>

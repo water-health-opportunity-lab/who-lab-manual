@@ -1,6 +1,6 @@
 # Communication and coordination
 
-by Jade Benjamin-Chung
+by Xindi (Cindy) Hu
 
 One benefit of the academic environment is its schedule flexibility. This means that lab members may choose to work in the early morning, evening, or weekends. That said, we do not expect lab members to respond outside of business hours (unless there are special circumstances).
 
@@ -8,29 +8,25 @@ One benefit of the academic environment is its schedule flexibility. This means 
 
 - Use Slack for scheduling, coding related questions, quick check ins, etc. If your Slack message exceeds 200 words, it might be time to use email. 
 - Use channels instead of direct messages unless you need to discuss something private. 
-- Please make an effort to respond to messages that message you (e.g., `@jade`) as quickly as possible and always within 24 hours. 
+- Please make an effort to respond to messages that message you as quickly as possible and always within 24 hours. 
 - If you are unusually busy (e.g., taking MCAT/GRE, taking many exams) or on vacation please alert the team in advance so we can expect you not to respond at all / as quickly as usual and also [set your status in Slack](https://get.slack.help/hc/en-us/articles/201864558-Set-your-Slack-status-and-availability) (e.g., it could say "On vacation") so we know not to expect to see you online. 
 - Please thread messages in Slack as much as possible. 
 
 ## Email
 
 - Use email for longer messages (>200 words) or messages that merit preservation. 
-- Generally, strive to respond within 24 hours hours. As noted above, if you are unusually busy or on vacation please alert the team in advance so we can expect you not to respond at all / as quickly as usual. 
+- Generally, strive to respond within 24 hours. As noted above, if you are unusually busy or on vacation please alert the team in advance so we can expect you not to respond at all / as quickly as usual. 
 
-## Trello
+## Confluence and Jira
 
-- Jade will add new cards within our shared Trello board that outline your tasks. 
-- The higher a card is within your list, the higher priority it is.
-- Generally, strive to complete the tasks in your card by the date listed. 
-- Use checklists to break down a task into smaller chunks. Sometimes Jade will write this for you, but you can also add this yourself. 
-- Jade will move your card to the "Completed" list when it is done. 
+Cindy will add new tasks to the shared Confluence project folders that outline your tasks. These tasks will show an assigned priority level within the project. Generally, strive to complete the tasks assigned to you by the date listed. The tasks will be marked as "completed" once it is finished. You can also use Confluence to create your own projects and tasks to organize other projects you may be involved in.
 
-## Google Drives
+## OneDrive
 
-- We mostly use Google Drive to create shared documents with longer descriptions of tasks. These documents are linked to in Trello. Jade often shares these with the whole team since tasks are overlapping, and even if a task is assigned to one person, others may have valuable insights. 
+- We mostly use OneDrive to create shared documents with proposals, meeting notes, and longer descriptions of tasks. These documents are linked to in Confluence and Jira.
 
 ## Meetings
 
-- Our meetings start on the hour.
+- Our meetings start on the hour or as otherwise indicated.
 - If you are going to be late, please send a message in our Slack channel. 
-- If you are regularly not able to come on the hour, notify the team and we might choose the modify the agenda order or the start time. 
+- If you are regularly not able to come to the meetings, notify the team and we might choose the modify the agenda order or the start time. 

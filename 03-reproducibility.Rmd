@@ -1,17 +1,15 @@
 # Reproducibility
 
-by Jade Benjamin-Chung
+by Xindi (Cindy) Hu
 
 Our lab adopts the following practices to maximize the reproducibility of our work. 
 
-1. Design studies with appropriate methodology and adherence to best practices in epidemiology and biostatistics
-2. Register study protocols
-3. Write and register pre-analysis plans
-4. Create reproducible workflows
-5. Process and analyze data with internal replication and masking
-6. Use reporting checklists with manuscripts
-7. Publish preprints
-8. Publish data (when possible) and replication scripts
+1. Design studies with appropriate methodology and adherence to best practices in environmental health, epidemiology, and biostatistics
+2. Create reproducible workflows
+3. Process and analyze data with internal replication and masking
+4. Use reporting checklists with manuscripts
+5. Publish preprints
+6. Publish data (when possible) and replication scripts
 
 
 ## What is the reproducibility crisis? 
@@ -29,48 +27,19 @@ Recommended readings on the "reproducibility crisis":
 
 ## Study design
 
-Appropriate study design is beyond the scope of this lab manual and is something trainees develop through their coursework and mentoring. 
-
-## Register study protocols
-
-We register all randomized trials on [clinicaltrials.gov](clinicaltrials.gov), and in some cases register observational studies as well. 
-
-## Write and register pre-analysis plans
-
-We write pre-analysis plans for most original research projects that are not exploratory in nature, although in some cases, we write pre-analysis plans for exploratory studies as well. The format and content of pre-analysis plans can vary from project to project. Here is an example of one: [https://osf.io/tgbxr/](https://osf.io/tgbxr/). Generally, these include: 
-
-1. Brief background on the study (a condensed version of the introduction section of the paper)
-2. Hypotheses / objectives
-3. Study design
-4. Description of data
-5. Definition of outcomes
-6. Definition of interventions / exposures
-7. Definition of covariates 
-8. Statistical power calculation 
-9. Statistical analysis:
-- Type of model 
-- Covariate selection / screening
-- Standard error estimation method
-- Missing data analysis
-- Assessment of effect modification / subgroup analyses
-- Sensitivity analyses
-- Negative control analyses
+Appropriate study design is beyond the scope of this lab manual and is something trainees develop through their coursework and mentoring.
 
 ## Create reproducible workflows
 
-Reproducible workflows allow a user to reproduce study estimates and ideally figures and tables with a "single click". In practice, this typically means running a single bash script that sources all replication scripts in a repository. These replication scripts complete data processing, data analysis, and figure/table generation. The following chapters provide detailed guidance on this topic: 
+Reproducible workflows allow a user to reproduce study estimates and ideally figures and tables with a "single click". In practice, this typically means running replication scripts that complete data processing, data analysis, and figure/table generation. The following chapters provide detailed guidance on this topic: 
 
-- Chapter 5: Code repositories
-- Chapter 6: Coding practices
-- Chapter 7: Coding style
-- Chapter 8: Code publication
-- Chapter 9: Working with big data
-- Chapter 10: Github
-- Chapter 11: Unix
-
-## Process and analyze data with internal replication and masking
-
-See my video on this topic: [https://www.youtube.com/watch?v=WoYkY9MkbRE](https://www.youtube.com/watch?v=WoYkY9MkbRE)
+- Chapter 4: Code repositories
+- Chapter 5: Coding practices
+- Chapter 6: Coding style
+- Chapter 7: Working with big data
+- Chapter 9: Github
+- Chapter 10: Unix
+- Chapter 12: Code publication
 
 ## Use reporting checklists with manuscripts
 
@@ -82,9 +51,4 @@ A preprint is a scientific manuscript that has not been peer reviewed. Preprint 
 
 ## Publish data (when possible) and replication scripts
 
-Publishing data and replication scripts allows other scientists to reproduce your work and to build upon it. We typically publish data on [Open Science Framework](osf.io), share links to [Github](github.com) repositories, and archive code on [Zenodo](zenodo.org).
-
-
-
-
-
+Publishing data and replication scripts allows other scientists to reproduce your work, access replication datasets, and to build upon it. We typically publish data on the [Harvard Dataverse](https://dataverse.harvard.edu/) and share links to and archive code in [Github](github.com) repositories. (Note: A Harvard affiliation is not required to access or store data in the Harvard Dataverse - you can even transfer account ownership to other email addresses after you leave an institution.)
