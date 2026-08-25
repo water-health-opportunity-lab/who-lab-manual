@@ -1,29 +1,27 @@
 # Reproducibility
 
-by Xindi (Cindy) Hu
+by Xindi (Cindy) Hu and Jahred Liddie
 
-Our lab adopts the following practices to maximize the reproducibility of our work. 
+Our lab adopts the following practices to maximize the reproducibility of our work.
 
-1. Design studies with appropriate methodology and adherence to best practices in environmental health, epidemiology, and biostatistics
-2. Create reproducible workflows
-3. Process and analyze data with internal replication and masking
-4. Use reporting checklists with manuscripts
-5. Publish preprints
-6. Publish data (when possible) and replication scripts
+1.  Design studies with appropriate methodology and adherence to best practices in environmental health, epidemiology, and biostatistics
+2.  Create reproducible workflows
+3.  Process and analyze data with internal replication and masking
+4.  Use reporting checklists with manuscripts
+5.  Publish preprints
+6.  Publish data (when possible) and replication scripts
 
+## What is the reproducibility crisis?
 
-## What is the reproducibility crisis? 
+In the past decade, an increasing number of studies have found that published study findings could not be reproduced. Researchers found that it was not possible to reproduce estimates from published studies: 1) with the same data and same or similar code and 2) with newly collected data using the same (or similar) study design. These "failures" of reproducibility were frequent enough and broad enough in scope, occurring across a range of disciplines (epidemiology, psychology, economics, and others) to be deeply troubling. Program and policy decisions based on erroneous research findings could lead to wasted resources, and at worst, could harm intended beneficiaries. This crisis has motivated new practices in reproducibility, transparency, and openness. Our lab is committed to adopting these best practices, and much of the remainder of the lab manual focuses on how to do so.
 
-In the past decade, an increasing number of studies have found that published study findings could not be reproduced. Researchers found that it was not possible to reproduce estimates from published studies: 1) with the same data and same or similar code and 2) with newly collected data using the same (or similar) study design. These "failures" of reproducibility were frequent enough and broad enough in scope, occurring across a range of disciplines (epidemiology, psychology, economics, and others) to be deeply troubling. Program and policy decisions based on erroneous research findings could lead to wasted resources, and at worst, could harm intended beneficiaries. This crisis has motivated new practices in reproducibility, transparency, and openness. Our lab is committed to adopting these best practices, and much of the remainder of the lab manual focuses on how to do so. 
-
-Recommended readings on the "reproducibility crisis": 
+Recommended readings on the "reproducibility crisis":
 
 - Nuzzo R. How scientists fool themselves – and how they can stop. 2015. [https://www.nature.com/articles/526182a]()
 
-- Stoddart C. Is there a reproducibility crisis in science? 2016. [https://www.nature.com/articles/d41586-019-00067-3](https://www.nature.com/articles/d41586-019-00067-3)
+- Stoddart C. Is there a reproducibility crisis in science? 2016. <https://www.nature.com/articles/d41586-019-00067-3>
 
-- Munafo MR, et al. A manifesto for reproducible science. *Nature Human Behavior* 2017 [http://dx.doi.org/10.1038/s41562-016-0021](http://dx.doi.org/10.1038/s41562-016-0021)
-
+- Munafo MR, et al. A manifesto for reproducible science. *Nature Human Behavior* 2017 <http://dx.doi.org/10.1038/s41562-016-0021>
 
 ## Study design
 
@@ -31,7 +29,7 @@ Appropriate study design is beyond the scope of this lab manual and is something
 
 ## Create reproducible workflows
 
-Reproducible workflows allow a user to reproduce study estimates and ideally figures and tables with a "single click". In practice, this typically means running replication scripts that complete data processing, data analysis, and figure/table generation. The following chapters provide detailed guidance on this topic: 
+Reproducible workflows allow a user to reproduce study estimates and ideally figures and tables with a "single click". In practice, this typically means running replication scripts that complete data processing, data analysis, and figure/table generation. The following chapters provide detailed guidance on this topic:
 
 - Chapter 4: Code repositories
 - Chapter 5: Coding practices
@@ -47,7 +45,7 @@ Using reporting checklists helps ensure that peer-reviewed articles contain the 
 
 ## Publish preprints
 
-A preprint is a scientific manuscript that has not been peer reviewed. Preprint servers create digital object identifiers (DOIs) and can be cited in other articles and in grant applications. Because the peer review process can take many months, publishing preprints prior to or during peer review enables other scientists to immediately learn from and build on your work. Importantly, NIH allows applicants to include preprint citations in their biosketches. In most cases, we publish preprints on [medRxiv](https://www.medrxiv.org/).
+A preprint is a scientific manuscript that has not been peer reviewed. Preprint servers create digital object identifiers (DOIs) and can be cited in other articles, presentation, and in grant applications. Because the peer review process can take many months, publishing preprints prior to or during peer review enables other scientists to immediately learn from and build on your work. Importantly, NIH allows applicants to include preprint citations in their biosketches. Example preprint archives include [medRxiv](https://www.medrxiv.org/) and [Earth and Space Science Open Archive](https://essopenarchive.org/). As of 2026, our lab has not published many preprints yet, although here is [one example](https://essopenarchive.org/doi/full/10.22541/essoar.176279979.97776493/v1).
 
 ## Publish data (when possible) and replication scripts
 
