@@ -1,0 +1,51 @@
+# Code Publication
+
+by Xindi (Cindy) Hu and Jahred Liddie
+
+## Checklist overview
+
+1. [Fill out file headers](#fill-out-file-headers)
+2. [Clean up comments](#clean-up-comments)
+3. [Document functions](#document-functions)
+4. [Remove deprecated filepaths](#remove-deprecated-filepaths)
+5. [Ensure project runs fully](#ensure-project-runs-fully)
+6. [Complete the README](#complete-the-readme)
+7. [Clean up feature branches](#clean-up-feature-branches)
+8. [Create Github release](#create-github-release)
+
+## Fill out file headers
+
+Every file in a project should have a header that allows it to be interpreted on its own. It should include the name of the project, author(s), and a short description for what this file (among the many in your project) does specifically.
+
+## Clean up comments
+
+Make sure comments in the code are for code documentation purposes only. Do not leave comments to self in the final script files.
+
+## Document functions
+
+Every function you write must include comments to document its purpose, inputs, and outputs.
+
+## Remove deprecated filepaths
+
+Ideally, all file paths are  defined in a 0-config.R, or otherwise are set relative to the project working directory. All absolute file paths from your local computer should be removed, and replaced with a relative path.
+
+## Ensure project runs fully
+
+The project should be configured to be entirely reproducible. Make sure this is the case by running all project files and checking output as necessary.
+
+## Complete the README
+
+A README.md should live at the top directory of the project. This usually includes a Project Overview and a Directory Structure, along with the names of the contributors and the Creative Commons License. See the lab Github page for examples, such as [this](https://github.com/water-health-opportunity-lab/ncwell). Another example is [here](https://github.com/SunderlandLab/treatment_adoption_disparities).
+
+## Clean up feature branches
+
+In the remote repository on Github, all feature branches aside from master should be merged in and deleted. All outstanding PRs should be closed.
+
+## Create Github release
+
+Typically, we will aim to conduct code releases through Github, although this may depend on the journal or purpose. In some cases, journals may not allow Github code releases - in this case, you should check with the journal for the recommended alternative (e.g., Zenodo or Dataverse). Still, the checklist above is relevant regardless of the venue.
+
+Once all of these items above are verified, create a tag to make a Github release, which will tag the repository, creating a marker at this specific point in time. 
+
+Detailed instructions [here.](https://docs.github.com/en/enterprise/2.13/user/articles/creating-releases)
+
