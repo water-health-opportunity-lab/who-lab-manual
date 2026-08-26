@@ -2,7 +2,7 @@
 
 by Xindi (Cindy) Hu and Jahred Liddie
 
-# AI Policy
+## Policy overview
 
 This policy is meant to refer to Large-Language Models (LLMs) for text or code generation in learning and research. This document does not cover machine learning or even AI in general, as these are distinct concepts. All statements in this document are subject to revision.
 
