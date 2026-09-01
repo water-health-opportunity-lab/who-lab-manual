@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 2 Culture and conduct | WHO Lab Manual</title>
+  <title>Chapter 13 AI policy | WHO Lab Manual</title>
   <meta name="description" content="Lab practices and data science best practices" />
   <meta name="generator" content="bookdown 0.46 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 2 Culture and conduct | WHO Lab Manual" />
+  <meta property="og:title" content="Chapter 13 AI policy | WHO Lab Manual" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="Lab practices and data science best practices" />
   <meta name="github-repo" content="water-health-opportunity-lab/who-lab-manual" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 2 Culture and conduct | WHO Lab Manual" />
+  <meta name="twitter:title" content="Chapter 13 AI policy | WHO Lab Manual" />
   
   <meta name="twitter:description" content="Lab practices and data science best practices" />
   
@@ -28,8 +28,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="index.html"/>
-<link rel="next" href="communication-and-coordination.html"/>
+<link rel="prev" href="data-publication.html"/>
+<link rel="next" href="checklists.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -256,32 +256,112 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="culture-and-conduct" class="section level1 hasAnchor" number="2">
-<h1><span class="header-section-number">Chapter 2</span> Culture and conduct<a href="culture-and-conduct.html#culture-and-conduct" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="ai-policy" class="section level1 hasAnchor" number="13">
+<h1><span class="header-section-number">Chapter 13</span> AI policy<a href="ai-policy.html#ai-policy" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <p>by Xindi (Cindy) Hu and Jahred Liddie</p>
-<div id="lab-culture" class="section level2 hasAnchor" number="2.1">
-<h2><span class="header-section-number">2.1</span> Lab culture<a href="culture-and-conduct.html#lab-culture" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>We are committed to a lab culture that is collaborative, supportive, inclusive, open, and free from discrimination and harassment.</p>
-<p>We encourage students / staff of all experience levels to respectfully share their honest opinions and ideas on any topic. Our group has thrived upon such respectful honest input from team members over the years, and this document is a product of years of student and staff input (and even debate) that has gradually improved our productivity and overall quality of our work.</p>
-</div>
-<div id="diversity-equity-and-inclusion" class="section level2 hasAnchor" number="2.2">
-<h2><span class="header-section-number">2.2</span> Diversity, equity, and inclusion<a href="culture-and-conduct.html#diversity-equity-and-inclusion" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>The WHO lab recognizes the importance of and is committed to cultivating a culture of diversity, equity, and inclusion. This means being a safe, supportive, and anti-racist environment in which students from diverse backgrounds are equally and inclusively supported in their education and training. Diversity takes many forms, and includes, but is not limited to, differences in race, ethnicity, gender, sexuality, socioeconomic status, religion, disability, and political affiliation.</p>
-</div>
-<div id="protecting-human-subjects" class="section level2 hasAnchor" number="2.3">
-<h2><span class="header-section-number">2.3</span> Protecting human subjects<a href="culture-and-conduct.html#protecting-human-subjects" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>All lab members must complete <a href="https://researchcompliance.stanford.edu/panels/hs/forms/training/citi">CITI Human Subjects Biomedical Group 1</a> training and share their certificate with Dr. Hu. She will add team members to relevant Institutional Review Board protocols prior to their start date to ensure they have permission to work with identifiable datasets.</p>
-<p>If you have previously completed CITI trainings at another institution, consult <a href="https://humanresearch.gwu.edu/collaborative-irb-training-initiative-citi">GW’s web page on CITI training</a> on how to “affiliate” your pre-existing CITI account with GW to enable the GW Office of Human Research (OHR) staff to view your training. You should also contact GW OHR to confirm that your prior training meets GW training requirements.</p>
-<p>One of the most relevant aspects of protecting human subjects in our work is maintaining confidentiality. For students and staff supporting our data science efforts, in practice this means:</p>
+<div id="policy-overview" class="section level2 hasAnchor" number="13.1">
+<h2><span class="header-section-number">13.1</span> Policy overview<a href="ai-policy.html#policy-overview" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>This policy is meant to refer to Large-Language Models (LLMs) for text or code generation in learning and research. This document does not cover machine learning or even AI in general, as these are distinct concepts. All statements in this document are subject to revision.</p>
+<p>Proceed with caution and purpose when using LLMs in your learning or research as a student. Our recommendation stems from the following rationale:</p>
 <ul>
-<li>Be sure to understand and comply with project-specific policies about where data can be saved, particularly if the data include personal identifiers.</li>
-<li>Do not share data with anyone without permission, including to other members of the group, who might not be on the same IRB protocol as you (check with Cindy first).</li>
+<li><p>LLMs are effectively a next-word prediction engine. As a result, for their statement to be true, a collection of true words have to be strung in the correct order. As the sequence of orders increases, the probability that the statement is true decreases. As a result, LLMs as tools require expertise in order to validate their output. The purpose behind your training is to develop that expertise. If you are using an LLM, you less able to effectively develop that expertise.</p></li>
+<li><p>Use of LLMs requires detailed validation steps, which your training may not have yet provided. So, you cannot verify whether some output is valid. This concern arises when developing code for data processing and statistical analyses.</p></li>
+<li><p>Part of my role is to train you. That means we should discuss questions that you have or challenges that arise. An LLM may send you down a wrong path without your realization. This is not an effective use of your limited time. Learning requires a certain amount of friction. Part of my job is to help you manage the appropriate amount of friction (enough to enhance your understanding, but not too much as to hinder you).</p></li>
+<li><p>Scientific writing is a difficult task that takes lots of practice to develop. Off-loading this process means you may not develop the necessary skills.</p></li>
+<li><p>Recent research has shown ‘deskilling’ or when cognitive processes are offloaded to an LLM a person’s skill at a task degrades. Preventing skill development is a worse issue.</p></li>
 </ul>
-<p>Remember, data that looks like it does not contain identifiers to you might still be classified as data that requires special protection by our IRB or under HIPAA, so always proceed with caution and ask for help if you have any concerns about how to maintain study participant confidentiality.</p>
+<p>There are some cases where LLM can be more reliable. The following are some use cases that we would deem LLMs to be reliable enough as a tool:</p>
+<ul>
+<li><p>Translating code from one software language to another (this comes with a built-in check)</p></li>
+<li><p>Convert existing code into an R or Python package (which again comes with a built-in check)</p></li>
+<li><p>Generating boilerplate code for plots (again straightforward to check by looking at the plot)</p></li>
+<li><p>Vectorizing or improving existing code (another built-in check, can you see the theme?)</p></li>
+<li><p>Aid in debugging code</p></li>
+<li><p>An advanced version of a thesaurus for complex topics</p></li>
+</ul>
+<p>Again, caution and purpose are still needed when using an LLM for many of these tasks while you are a student, and even afterwards. Doing them the “difficult way” can be a valuable learning experience. For example, the act of converting code helps you think through the process of what aspects of a tool a user might need, how a sensible API is created, and how to structure files.</p>
+<p>Finally, I will note that you can experiment with LLMs as a tool. We have with instances outside the use cases above. As stated in the opening sentence, this document is meant to focus on the use of LLMs in your learning and research. These are (or should be) distinct from experimenting with them for different tasks. Use of LLMs should be clearly delineated behind the purpose.</p>
+<p>Having outlined my general perspective on the use of LLMs in learning and research, the following details what is expected of you if you are going to make extensive use of an LLM for a research project despite the warnings made here.</p>
+<hr />
 </div>
-<div id="authorship" class="section level2 hasAnchor" number="2.4">
-<h2><span class="header-section-number">2.4</span> Authorship<a href="culture-and-conduct.html#authorship" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>We adhere to the <a href="http://www.icmje.org/recommendations/browse/roles-and-responsibilities/defining-the-role-of-authors-and-contributors.html">ICMJE Definition of authorship</a> and are happy for team members who meet the definition of authorship to be included as co-authors on scientific manuscripts.</p>
+<div id="disclosure-statement" class="section level2 hasAnchor" number="13.2">
+<h2><span class="header-section-number">13.2</span> Disclosure Statement<a href="ai-policy.html#disclosure-statement" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>For us to have successful advisor-advisee, mentor-mentee, and even lab member-lab member relationships, we need to be able to trust each other. As part of that, it is expected of you to disclose any use of an LLM. Failure to do so jeopardizes that collaborative relationship. For disclosing LLM use, please complete the following table (or a modified version we agree upon). This table <em>should be completed prior to using an LLM</em>.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Task</th>
+<th>Rationale</th>
+<th>Description of Use</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Outlining project</td>
+<td>…</td>
+<td>…</td>
+</tr>
+<tr class="even">
+<td>Writing proposal or paper</td>
+<td>…</td>
+<td>…</td>
+</tr>
+<tr class="odd">
+<td>Statistical analysis plan</td>
+<td>…</td>
+<td>…</td>
+</tr>
+<tr class="even">
+<td>Code writing</td>
+<td>…</td>
+<td>…</td>
+</tr>
+<tr class="odd">
+<td>Data analysis</td>
+<td>…</td>
+<td>…</td>
+</tr>
+<tr class="even">
+<td>Code or paper review</td>
+<td>…</td>
+<td>…</td>
+</tr>
+<tr class="odd">
+<td>Literature review</td>
+<td>…</td>
+<td>…</td>
+</tr>
+<tr class="even">
+<td>Other</td>
+<td>…</td>
+<td>…</td>
+</tr>
+</tbody>
+</table>
+<p>I (as Cindy) also recognize that the mentor-mentee relationship is a two-way street. So, I also make the following promises in terms of conduct and disclosure to you:</p>
+<ul>
+<li><p>I will review your work that you send to me. I will not use an LLM or other related technology for reviewing your work. In other cases, other lab members (should as postdocs) will review work that you send to them and the same expectation is appropriate regarding LLM use.</p></li>
+<li><p>I will respond to your emails or questions myself. I will not use an LLM to do so.</p></li>
+<li><p>I will draft requested recommendations letters myself and will not use an LLM.</p></li>
+<li><p>If we are working together on a project, I will disclose my use of an LLM in accordance with the disclosure table.</p></li>
+</ul>
+</div>
+<div id="my-expectations" class="section level2 hasAnchor" number="13.3">
+<h2><span class="header-section-number">13.3</span> My expectations<a href="ai-policy.html#my-expectations" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The following are some additional requirements if you are to use LLMs. If you want an exception to any of these steps, you must discuss them with me and I must approve.</p>
+<ul>
+<li><p>You are to use GW’s <a href="https://library.unc.edu/ai/library-ai-studio/promptlab/">Gemini access</a> to interact with an LLM. Other LLMs are acceptable as permitted by data privacy constraints.</p></li>
+<li><p>No data from or used by research group is uploaded, irrespective of the GW-determined Information Tier.</p></li>
+<li><p>No works in-progress or other similar materials are uploaded. Revising small collections of different sentences is ok, but an entire document should never be uploaded.</p></li>
+<li><p>Uploading lab group material (papers, manuscripts, private code) that is not yours without the express and documented permission of the owner of that material.</p></li>
+</ul>
+<p>The following are some principles that are expected of you to adhere to if you use LLMs:</p>
+<ul>
+<li><p>Completed the disclosure table. This helps to ensure that you had identified a clear task for use with an LLM and are limiting it to that task.</p></li>
+<li><p>Export all chat logs for record keeping. This should be all relevant chat logs <em>in their entirety</em> for a project. I may ask for these to be provided to me.</p></li>
+<li><p>Any code generated by an LLM that cannot be directly verified is instead vetted and verified through a testing procedure. An example of code that can be directly verifiable is code to create a plot (since we can examine the plot to see whether it is correct). An example of code that is not directly verifiable is fitting a statistical model. Such code should be validated through the use of unit tests.</p></li>
+<li><p>LLMs are used for text revision and not text generation. A major danger with LLM text is that it might be plagiarized, which can have substantial negative professional consequences for both you and me. I may ask that you use plagiarism detection software if LLMs are used during the writing process.</p></li>
+</ul>
 
 </div>
 </div>
@@ -290,8 +370,8 @@
           </div>
         </div>
       </div>
-<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="communication-and-coordination.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="data-publication.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="checklists.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -322,7 +402,7 @@ gitbook.start({
     "size": 2
   },
   "edit": {
-    "link": "https://github.com/water-health-opportunity-lab/who-lab-manual/edit/master/01-culture-and-conduct.Rmd",
+    "link": "https://github.com/water-health-opportunity-lab/who-lab-manual/edit/master/12-ai-policy.Rmd",
     "text": "Edit"
   },
   "history": {
