@@ -1,16 +1,16 @@
 # Github {#github}
 
-by Stephanie Djajadi and Nolan Pokpongkiat
+by Xindi (Cindy) Hu and Jahred Liddie
 
 ## Basics
 
--   A detailed tutorial of Git can be found [here on the CS61B website](https://sp19.datastructur.es/materials/guides/using-git#b-local-repositories-narrative-introduction).
+-   A detailed tutorial of Git can be found [here on Stanford's CS61B website](https://sp19.datastructur.es/materials/guides/using-git#b-local-repositories-narrative-introduction). You can also find an overview from Prof. Hu's course [here](https://pubh6199-data-viz-with-r.github.io/2026-Summer/class/2-data-wrangling.html)
 -   If you are already familiar with Git, you can reference the summary at the end of [Section B](https://sp19.datastructur.es/materials/guides/using-git#b-local-repositories-narrative-introduction).
 -   If you have made a mistake in Git, you can refer to this [article](https://sethrobertson.github.io/GitFixUm/fixup.html) to undo, fix, or remove commits in git.
 
 ## Github Desktop
 
-While knowing how to use Git on the command line will always be useful since the full power of Git and its customizations and flexibilty is designed for use with the command line, Github also provides [Github Desktop](https://desktop.github.com/) as an graphical interface to do basic git commands; you can do all of the basic functions of Git using this desktop app. Feel free to use this as an alternative to Git on the command line if you prefer.
+While knowing how to use Git on the command line will always be useful since the full power of Git and its customizations and flexibility is designed for use with the command line, Github also provides [Github Desktop](https://desktop.github.com/) as an graphical interface to do basic git commands; you can do all of the basic functions of Git using this desktop app. Feel free to use this as an alternative to Git on the command line if you prefer.
 
 ## Git Branching
 

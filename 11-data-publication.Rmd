@@ -1,0 +1,124 @@
+# Data Publication
+
+by Xindi (Cindy) Hu and Jahred Liddie
+
+Adapted from Fanice Nyatigo and Ben Arnold's chapter in the [Proctor-UCSF Lab Manual](https://urlisolation.com/browser?clickId=524DE241-3F8F-4C98-B619-3C278374BF64&traceToken=1728923499%3Bucsfmed_hosted%3Bhttps%3A%2F%2Fproctor-ucsf.github.io%2Fd&url=https%3A%2F%2Fproctor-ucsf.github.io%2Fdcc-handbook%2Fpublicdata.html)
+
+## Overview
+
+------------------------------------------------------------------------
+
+> ***Warning! NEVER** publish a dataset into the public domain (e.g., Dataverse or Zenodor) without first checking with Cindy to ensure that it is appropriately de-identified and we have approval from the sponsor and/or human subjects review board to do so. For example, we will need to re-code participant IDs (even if they contain no identifying information) before making data public to completely break the link between IDs and identifiable information stored on our servers.*
+
+------------------------------------------------------------------------
+
+If you are releasing data into the public domain, then consider making available *at minimum* a `.csv` file and a codebook of the same name. In some cases, you may need multiple CSV files if there are multiple analytic datasets. In that situation, consider making multiple codebooks or use an Excel file with multiple tabs (one for each dataset).
+
+```         
+analysis_data_public.csv
+analysis_data_public_codebook.txt
+```
+
+In general, datasets are usually too big to save on GitHub, but occasionally they are small. If the data are bigger, then maintaining them under version control in your git repository can be unwieldy. Instead, we recommend using another stable repository that has version control, such as the Open Science Framework ([osf.io](https://osf.io)), [Zenodo](https://zenodo.org/), or the [Dataverse](https://dataverse.harvard.edu/).
+
+Below are the main steps to making data public, after finalizing the analysis datasets and scripts:\
+1. Remove Protected Health Information (PHI), if applicable\
+2. Create public IDs or join already created public IDs to the data, if applicable\
+3. Create a repository entry\
+4. Edit analysis scripts to run using the public datasets and test (optional)\
+5. Create a public Github page for analysis scripts and link to the data repository\
+6. Go live
+
+## Removing PHI
+
+Once the data is finalized for analysis, the first step is to strip it of Protected Health Information (PHI), or any other data that could be used to link back to specific participants, such as names, birth dates, or GPS coordinates at the village/neighborhood level or below. PHI includes, but is not limited to:
+
+### Personal information
+
+These are identifiers that directly point to specific individuals, such as:\
+- Names, addresses, photographs, date of birth\
+- A combination of age, sex, and geographic location (below population 20,000) is considered identifiable
+
+### Dates
+
+Any specific dates (e.g., study visit dates, birth dates, treatment dates) are usually problematic.\
+- If a dataset requires high resolution temporal information, coarsen visit or measurement dates to be two variables: year and week of the year (1-52).\
+- If a dataset requires age, provide that information without a birth date (typically month resolution is sufficient)
+
+------------------------------------------------------------------------
+
+> ***Caution!** If making changes to the format of dates or ages, make sure your analysis code runs on these modified versions of the data (step 3)!*
+
+------------------------------------------------------------------------
+
+### Geographic information
+
+Do not include GPS coordinates (longitude, latitude) except in special circumstances where they have been obfuscated/shifted. Reach out to Cindy before doing this because it can be complicated.
+
+Do not include place names or codes (e.g., US Zip Codes) if the place contains \<20,000 people. For villages or neighborhoods, code them with uninformative IDs. For sub-districts or districts, names are fine.
+
+If an analysis requires GPS locations (e.g., to make a map), then typically we include a disclaimer in the article’s data availability statement that explains we cannot make GPS locations public to protect participant confidentiality. As a middle ground, we typically make our *code* public that runs on the geo-located data for transparency, even if independent researchers can’t actually run that code (although please be careful to ensure the code itself does not in any way include geographic identifiers).
+
+For more examples of what constitutes PHI, please refer to this link: <https://privacy.gwu.edu/hipaa>
+
+## Create public IDs
+
+### Rationale
+
+The GW IRB requires that public datasets not include the original study IDs to identify participants or other units in the study (such as village IDs). The reason is that those IDs are linked in our private datasets to PHI. By creating a new set of public IDs, the public dataset is one step further removed from the potential to link to PHI.
+
+### A single set of public IDs for each study
+
+For each study, it is ideal to create a single set of public IDs whenever possible. We could create a new set of public IDs for every public dataset, but the downside is that independent researchers could no longer link data that might be related. By creating a single set of public IDs associated with each internal study ID, public files retain the link.
+
+Maintaining a single set of public IDs requires a shared "bridge" dataset, that includes a row for each study ID and has the associated public ID. For studies with multiple levels of ID, we would typically have separate bridge datasets for each type of ID (e.g,. cluster ID, participant ID, etc.)
+
+Create a public ID that can be used to uniquely identify participants and that can internally be linked to the original study IDs. We recommend creating a subdirectory in the study’s shared data directory to store the public IDs. The shared location enables multiple projects to use the same IDs. Create the IDs using a script that reads in the study IDs, creates a unique (uninformative) public ID for the study IDs, and then saves the bridge dataset. The script should be saved in the same directory as the public ID files.
+
+------------------------------------------------------------------------
+
+> ***Caution!** Note that small differences may arise if the new public IDs do not necessarily order participants in the same way as the internal IDs. The small differences are all in estimates that rely on resampling, such as Bootstrap CIs, permutation p-values, and TMLE, as the resampling process may lead to slightly different re-samples. The key here to ensure the results are consistent irrespective of the dataset used is simply to not assign public IDs randomly. Use `rank()` on the internal ID instead of `row_number()` to ensure that the order is always the same.*
+
+------------------------------------------------------------------------
+
+### Example scripts
+
+A self-contained and reproducible example that you can run and replicate when making data public for your projects is available below from UCSF researchers. It contains the following files and folders:
+
+1.  `data/final/`- folder containing the projects final data in both csv and rds formats\
+2.  `code/DEMO_generate_public_IDs.R`- creates randomly generated public IDs that can be matched to the trial's assigned patient IDs.\
+3.  `data/make_public/DEMO_internal_to_publicID.csv`- the output from step #2, a bridge dataset with two variables- the new public ID and the patient's assigned ID.\
+4.  `code/DEMO_create_public_datasets.R`- joins the public IDs to the trial's full dataset, and strips it of the assigned patient ID.
+5.  `data/public/`- folder containing the output from step #3- de-identified public dataset, in csv and rds formats, with uniquely identifying public IDs that cannot be easily linked back to the patient's ID.
+
+The example workflow is accessible via GitHub: <https://github.com/proctor-ucsf/dcc-handbook/tree/master/templates/making-data-public>
+
+## Create a data repository
+
+First, ensure that you create a codebook and metadata file for each public dataset [See the DCC guide on Documenting datasets](https://proctor-ucsf.github.io/dcc-handbook/datawrangling.html#documenting-datasets). Use the same name as the datasets, but with "-codebook.txt” / “-codebook.html” / “-codebook.csv” at the end (depending on the file format for the codebook). One nice option is the R codebook package, which also generates JSON output that is machine-readable.
+
+Previous slides from Jahred on using the Dataverse are available [here](https://github.com/jahredwithanh/dataverse_tips/blob/main/dataverse_tips_jml.pdf). Ask Cindy for recommendations on the best venue to publish your paper's data.
+
+## Edit and test analysis scripts
+
+Make minor changes to the analysis scripts so that they run on public data. If using version control in GitHub, the most straight-forward way is to create a branch from the main git branch that reads in the public files, and then renames the new public ID variable, e.g., "id_public" to the internally recognized ID variable name, e.g. "recordID", when reading in the public data. Re-run all the analysis scripts to ensure that they still work with the public version of the dataset.
+
+## Create a public GitHub page for public scripts
+
+At minimum, we should include all of the scripts required to run the analyses. **IMPORTANT**: ensure you have taken a snapshot and saved your computing environment using the `renv` package ([`renv`](#renv)).
+
+See examples:\
+- ACTION - <https://github.com/proctor-ucsf/ACTION-public>\
+- NAITRE - <https://github.com/proctor-ucsf/NAITRE-primary>
+
+------------------------------------------------------------------------
+
+> ***Caution!** Read through the scripts carefully to ensure there is no PHI in the code itself*
+
+------------------------------------------------------------------------
+
+## Go live
+
+On GitHub, it is useful to create an official "release" version to freeze the repository, where you can have "associated files" with each version.
+
+Further reading on end-to-end data management: [How to Store and Manage Your Data - PLOS](https://plos.org/resource/how-to-store-and-manage-your-data/#data-management-plan)

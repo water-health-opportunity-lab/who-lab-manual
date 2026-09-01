@@ -1,6 +1,6 @@
 # Resources
 
-by Jade Benjamin-Chung and Kunal Mishra
+by Xindi (Cindy) Hu and Jahred Liddie
 
 ## Resources for R
 
@@ -9,7 +9,6 @@ by Jade Benjamin-Chung and Kunal Mishra
 - [data table cheat sheet](https://s3.amazonaws.com/assets.datacamp.com/blog_assets/datatable_Cheat_Sheet_R.pdf)
 - [RMarkdown cheat sheet](https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf)
 - [Hadley Wickham's R Style Guide](http://adv-r.had.co.nz/Style.html)
-- [Jade's R-for-epi course](https://ucb-epi-r.github.io)
 - [Tidy Eval in 5 Minutes](https://www.youtube.com/watch?v=nERXS3ssntw) (video)
 - [Tidy Evaluation](https://tidyeval.tidyverse.org/index.html) (e-book)
 - [Data Frame Columns as Arguments to Dplyr Functions](https://www.brodrigues.co/blog/2016-07-18-data-frame-columns-as-arguments-to-dplyr-functions/) (blog)
@@ -20,8 +19,10 @@ by Jade Benjamin-Chung and Kunal Mishra
 - [Data Camp introduction to Git](https://www.datacamp.com/courses/introduction-to-git-for-data-science)
 - [Introduction to Github](https://lab.github.com/githubtraining/introduction-to-github)
 
-## Scientific figures
+## Figures
 - [Ten Simple Rules for Better Figures](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003833)
+- [The R Graph Gallery](https://r-graph-gallery.com/)
+- [R Charts](https://r-charts.com/)
 
 ## Writing
 
@@ -44,7 +45,5 @@ by Jade Benjamin-Chung and Kunal Mishra
 ## Funding
 - [Building Your Funding Train](https://grantwriting.stanford.edu/funding-train/#ep)
 
-## Ethics and global health research
-- [Global Code of Conduct For Research in Resource-Poor Settings](https://www.globalcodeofconduct.org/wp-content/uploads/2018/05/Global-Code-of-Conduct-Brochure.pdf)
-- [Who is a global health expert? Advice for aspiring global health experts](https://journals.plos.org/globalpublichealth/article?id=10.1371/journal.pgph.0002269)
-- [Transforming Global Health Partnerships](https://link.springer.com/book/9783031537929)
+## How to write an effective peer review
+- [How to write an effective journal peer review using a staged writing approach: a best-practice guide for early-career researchers](https://doi.org/10.1093/ije/dyae154)
