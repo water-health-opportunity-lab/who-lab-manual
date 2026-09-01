@@ -8,7 +8,7 @@ This policy is meant to refer to Large-Language Models (LLMs) for text or code g
 
 Proceed with caution and purpose when using LLMs in your learning or research as a student. Our recommendation stems from the following rationale:
 
-- LLMs are effectively a next-word prediction engine. As a result, for their statement to be true, a collection of true words have to be strung in the correct order. As the sequence of orders increases, the probability that the statement is true decreases. As a result, LLMs as tools require expertise in order to validate their output. The purpose behind your training is to develop that expertise. If you are using an LLM, you less able to effectively develop that expertise.
+- LLMs are effectively a next-word prediction engine. As a result, for their statement to be true, a collection of true words have to be strung in the correct order. As the sequence of orders increases, the probability that the statement is true decreases. As a result, LLMs as tools require expertise in order to validate their output. The purpose behind your training is to develop that expertise. If you are using an LLM, you are less able to effectively develop that expertise.
 
 - Use of LLMs requires detailed validation steps, which your training may not have yet provided. So, you cannot verify whether some output is valid. This concern arises when developing code for data processing and statistical analyses.
 
@@ -57,7 +57,7 @@ For us to have successful advisor-advisee, mentor-mentee, and even lab member-la
 
 I (as Cindy) also recognize that the mentor-mentee relationship is a two-way street. So, I also make the following promises in terms of conduct and disclosure to you:
 
-- I will review your work that you send to me. I will not use an LLM or other related technology for reviewing your work. In other cases, other lab members (should as postdocs) will review work that you send to them and the same expectation is appropriate regarding LLM use.
+- I will review your work that you send to me. I will not use an LLM or other related technology for reviewing your work. In other cases, other lab members (such as postdocs) will review work that you send to them and the same expectation is appropriate regarding LLM use.
 
 - I will respond to your emails or questions myself. I will not use an LLM to do so.
 
@@ -75,7 +75,7 @@ The following are some additional requirements if you are to use LLMs. If you wa
 
 - No works in-progress or other similar materials are uploaded. Revising small collections of different sentences is ok, but an entire document should never be uploaded.
 
-- Uploading lab group material (papers, manuscripts, private code) that is not yours without the express and documented permission of the owner of that material.
+- Uploading lab group material (papers, manuscripts, private code) that is not yours without the express and documented permission of the owner of that material is not allowed.
 
 The following are some principles that are expected of you to adhere to if you use LLMs:
 
